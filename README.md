@@ -1,6 +1,6 @@
 # Warehouse Tracker
 
-Programa que permita
+Programa que permite
 registar as entradas e saídas de produtos num armazém. Cada produto
 possui um código identificativo (que também designaremos
 por chave) e a existência actual, expressa em número de unidades.
