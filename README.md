@@ -11,6 +11,12 @@ introduzir novas existências de um produto. A opção l permite listar as exist
 enquanto que a opção m lista o produto com maior número de unidades em stock. A opção r permite
 eliminar uma chave. Por fim, o comando x deverá terminar o programa, escrevendo o número de
 produtos (ou chaves) diferentes guardados no sistema.
+A chave representa o código identificativo ou chave de um produto. Corresponde a uma
+sequência de 8 caracteres (sem espaços) sobre o alfabeto
+Σ = {0,1, 2,3, 4, 5, 6, 7,8, 9, a, b, c, d, e, f }. O valor é um número inteiro representando o
+número de unidades adicionadas ou removidas desse produto1
+. Se valor for positivo
+deverá incrementar esse número às existências desse produto.
 
 Para isto foi implementada uma hash table linear para evitar cache misses sem ponteiros e radix sort LSD com counting sort
 para a maior eficiencia possivel.
@@ -27,12 +33,7 @@ unidades em stock.
 r - Remove o produto com o código dado.
 x - Termina o programa
 
-A chave representa o código identificativo ou chave de um produto. Corresponde a uma
-sequência de 8 caracteres (sem espaços) sobre o alfabeto
-Σ = {0,1, 2,3, 4, 5, 6, 7,8, 9, a, b, c, d, e, f }. O valor é um número inteiro representando o
-número de unidades adicionadas ou removidas desse produto1
-. Se valor for positivo
-deverá incrementar esse número às existências desse produto.
+
 
 Input:
 a 60fdba63 4\
@@ -43,7 +44,7 @@ l\
 r c614e44d\
 a 90adba63 4\
 l\
-x\
+x
 
 Output:
 60fdba63 0\
